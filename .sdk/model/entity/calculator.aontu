@@ -1,0 +1,126 @@
+# Entity: calculator
+
+main: kit: entity: calculator: {
+
+  alias: field: {}
+
+  fields: {
+    instrumentWeeks: {
+      h: "Instrument Weeks"
+      n: "instrumentWeeks"
+      r: false
+      sh: "Notice in your award, agreement or contract"
+      t: "`$NUMBER`"
+    }
+    over45: {
+      h: "Over45"
+      n: "over45"
+      r: false
+      sh: "Over 45 on the day notice is given?"
+      t: "`$STRING`"
+    }
+    reason: {
+      h: "Reason"
+      n: "reason"
+      r: false
+      sh: "How is the employment ending?"
+      t: "`$STRING`"
+    }
+    weeklyPay: {
+      h: "Weekly Pay"
+      n: "weeklyPay"
+      r: false
+      sh: "Weekly pay"
+      t: "`$NUMBER`"
+    }
+    years: {
+      h: "Years"
+      n: "years"
+      r: false
+      sh: "Completed years of continuous service"
+      t: "`$NUMBER`"
+    }
+  }
+
+  name: "calculator"
+  op: {
+    create: {
+      name: "create"
+      points: [
+        {
+          bf: [
+            "instrumentWeeks"
+            "over45"
+            "reason"
+            "weeklyPay"
+            "years"
+          ]
+          co: {
+            id: "POST /mcp/tools/calculate"
+            source: "openapi3"
+            version: 2
+          }
+          m: "POST"
+          o: "/mcp/tools/calculate"
+          rs: {
+            kind: "json"
+            media: "application/json"
+          }
+          s: [
+            {
+              lit: "mcp"
+            }
+            {
+              lit: "tools"
+            }
+            {
+              lit: "calculate"
+            }
+          ]
+          t: {
+            req: {
+              instrumentWeeks: "`reqdata.instrument_week`"
+              over45: "`reqdata.over45`"
+              reason: "`reqdata.reason`"
+              weeklyPay: "`reqdata.weekly_pay`"
+              years: "`reqdata.year`"
+            }
+            res: "`body`"
+          }
+        }
+        {
+          bf: false
+          co: {
+            id: "POST /mcp/tools/calculator_describe"
+            source: "openapi3"
+            version: 2
+          }
+          m: "POST"
+          o: "/mcp/tools/calculator_describe"
+          rs: {
+            kind: "json"
+            media: "application/json"
+          }
+          s: [
+            {
+              lit: "mcp"
+            }
+            {
+              lit: "tools"
+            }
+            {
+              lit: "calculator_describe"
+            }
+          ]
+          t: {
+            req: "`reqdata`"
+            res: "`body`"
+          }
+        }
+      ]
+    }
+  }
+
+
+
+}

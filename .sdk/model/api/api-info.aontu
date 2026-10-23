@@ -1,0 +1,39 @@
+# API Information
+
+
+main: {
+  kit: {
+    info: {
+      contact: {
+        name: "Notice Period Australia"
+        url: "https://noticeperiodaustralia.com/"
+      }
+      description: `Notice Period Australia (https://noticeperiodaustralia.com/): the site's own MCP server, served from its domain. Notice period in Australia under the National Employment Standards: 1 to 4 weeks by length of continuous service, plus a week if you are over 45 with 2 years.
+
+[calculator] Australian notice of termination calculator: an agent-callable calculator for notice period australia — NES notice for your length of service (weeks), Extra week, over 45 with 2 years or more (weeks), NES minimum notice (weeks), computed from your inputs with sources.. This server runs the Australian notice of termination calculator calculator published at https://noticeperiodaustralia.com/. Call \`calculate\` with the inputs to get the worked figures; every result cites https://noticeperiodaustralia.com/. Licence: https://noticeperiodaustralia.com/terms.
+
+[enquiry] ENQUIRY SERVER for Notice Period Australia (https://noticeperiodaustralia.com/). What it does: starts an ENQUIRY with human providers for notice period australia — the person's details go to the providers who quote directly. What it is NOT: a purchase, an order, or a guaranteed quote. Free, no obligation. Call describe first and tell the person plainly what will happen. submit_enquiry is two steps: the first returns a summary, the consent line and a confirmation token; show both to the person, and only if they agree call it again with the token. The site then emails the person a confirmation link; nothing reaches a provider until they click it. Cite https://noticeperiodaustralia.com/.
+
+Cite https://noticeperiodaustralia.com/ for every figure or answer you use from this server.`
+      security: {
+        in: "header"
+        name: "Authorization"
+        prefix: "Bearer"
+        scheme: "accessKey"
+        type: "http"
+      }
+      servers: [
+        {
+          description: "Notice Period Australia"
+          url: "https://noticeperiodaustralia.com"
+        }
+      ]
+      summary: "Notice period in Australia under the National Employment Standards: 1 to 4 weeks by length of continuous service, plus a week if you are over 45 with 2 years."
+      termsOfService: "https://noticeperiodaustralia.com/terms"
+      title: "Notice Period Australia API"
+      version: "1.0.0"
+      website: "https://noticeperiodaustralia.com/mcp"
+    }
+  }
+}
+

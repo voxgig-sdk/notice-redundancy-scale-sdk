@@ -1,0 +1,25 @@
+{
+  "files": [
+    "SUMMARY.md"
+  ],
+  "config": ".sdk/doc/qa/vale.ini",
+  "routes": {},
+  "quoted": {
+    "SUMMARY.md": [
+      "> Notice Period Australia (https://noticeperiodaustralia.com/): the site&#39;s own MCP server, served from its domain. Notice period in Australia under the National Employment Standards: 1 to 4 weeks by length of continuous service, plus a week if you are over 45 with 2 years.\n>\n> [calculator] Australian notice of termination calculator: an agent-callable calculator for notice period australia, NES notice for your length of service (weeks), Extra week, over 45 with 2 years or more (weeks), NES minimum notice (weeks), computed from your inputs with sources.. This server runs the Australian notice of termination calculator calculator published at https://noticeperiodaustralia.com/. Call `calculate` with the inputs to get the worked figures; every result cites https://noticeperiodaustralia.com/. Licence: https://noticeperiodaustralia.com/terms.\n>\n> [enquiry] ENQUIRY SERVER for Notice Period Australia (https://noticeperiodaustralia.com/). What it does: starts an ENQUIRY with human providers for notice period australia, the person&#39;s details go to the providers who quote directly. What it is NOT: a purchase, an order, or a guaranteed quote. Free, no obligation. Call describe first and tell the person plainly what will happen. `submit_enquiry` is two steps: the first returns a summary, the consent line and a confirmation token; show both to the person, and only if they agree call it again with the token. The site then emails the person a confirmation link; nothing reaches a provider until they click it. Cite https://noticeperiodaustralia.com/.\n>\n> Cite https://noticeperiodaustralia.com/ for every figure or answer you use from this server.",
+      "A JSON-RPC result.",
+      "An access key (`emk_`...): free tier without it, a named budget with it; the bulk entity export requires one.",
+      "Completed years of continuous service",
+      "How is the employment ending?",
+      "Notice Period Australia",
+      "Notice in your award, agreement or contract",
+      "Over 45 on the day notice is given?",
+      "The server card",
+      "The tool&#39;s answer, as JSON",
+      "Weekly pay",
+      "the confirmation token from step 1, after the person has approved the summary",
+      "the person&#39;s answers, keyed by field key",
+      "true only when the person has agreed to: Send my contact details to up to three payroll and HR service providers, chosen by Notice Period Australia, who&#39;ll contact me directly."
+    ]
+  }
+}
